@@ -19,7 +19,7 @@ function displayFood(foods) {
     searchMenu.value = "";
     foodItems.innerHTML = "";
 
-
+    // meal short info 
     foods.forEach(food => {
         const foodDiv = document.createElement('div');
 
