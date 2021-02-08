@@ -6,15 +6,7 @@ const searchMealButton = () => {
     fetch(url)
         .then(res => res.json())
         .then(data => displaymeal(data.meals))
-        .catch(error => displayError("sorry! Search again."))
-}
-
-// error result
-
-const displayError = error => {
-    const errorTag = document.getElementById('error');
-    errorTag.innerText = "";
-    errorTag.innerText = error;
+        .catch(() => alert('Sorry! Search again'))
 }
 
 
